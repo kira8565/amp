@@ -35,8 +35,13 @@
         <form method="post" class="m-t" role="form" action="checkLogin">
             {% csrf_token %}
             {% if msg %}
-                <div class="alert alert-info alert-dismissible">
+                <div class="alert alert-danger alert-dismissible">
                     {{ msg }}
+                </div>
+            {% endif %}
+            {% if info %}
+                <div class="alert alert-info alert-dismissible">
+                    {{ info }}
                 </div>
             {% endif %}
             <div class="form-group">
@@ -47,11 +52,6 @@
             </div>
             <button type="submit" class="btn btn-primary block full-width m-b">登 录</button>
 
-
-            <p class="text-muted text-center"><a href="login.html#">
-                <small>忘记密码了？</small>
-            </a> | <a href="register.html">注册一个新账号</a>
-            </p>
 
         </form>
     </div>
