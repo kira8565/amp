@@ -18,16 +18,9 @@ def login(request):
 
 # 登录检查
 def checkLogin(request):
-    form = loginForm(request)
+    form = loginForm(request.POST)
     if form.is_valid():
-        form = loginForm()
-        return render(request, 'login/login.html', context={
-            'msg': "用户名密码有误",
-            'form': form
-        })
-
-    else:
-        user = auth.authenticate(username=form.username, password=form.password)
+        user = auth.authenticate(username=form.data['username'], password=form.data['password'])
         if user and user.is_active:
             auth.login(request, user)
             return HttpResponseRedirect("/mainform")
@@ -42,6 +35,11 @@ def checkLogin(request):
                 'msg': "用户名密码有误",
                 'form': form
             })
+
+    else:
+        return render(request, 'login/login.html', context={
+            'form': form
+        })
 
 
 # 用户登出
