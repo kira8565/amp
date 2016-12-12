@@ -28,12 +28,14 @@ def checkLogin(request):
         elif user and user.is_active == False:
             return render(request, 'login/login.html', context={
                 'msg': "该用户已被禁用",
-                'form': form
+                'form': form,
+                'level': 'danger'
             })
         else:
             return render(request, 'login/login.html', context={
                 'msg': "用户名密码有误",
-                'form': form
+                'form': form,
+                'level': 'danger'
             })
 
     else:
@@ -46,5 +48,7 @@ def checkLogin(request):
 def logout(request):
     auth.logout(request)
     return render(request, 'login/login.html', context={
-        'info': "登出成功"
+        'msg': "登出成功",
+        'level': 'info',
+        'form': loginForm()
     })
