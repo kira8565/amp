@@ -35,9 +35,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_crontab',
     'login',
     'mainform',
     'hpwidget',
+    'saltmanager',
 ]
 
 MIDDLEWARE = [
@@ -135,3 +137,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
+
+CRONJOBS = [
+    ('* * * * *', 'saltmanager.crons.listSaltKeysJob')
+]
