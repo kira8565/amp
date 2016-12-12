@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52721a46-e853-4e27-8a97-e8cf770cef4a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hpwidget/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hpwidget/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hpwidget/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hpwidget/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hpwidget/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hpwidget/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hpwidget/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hpwidget/widgets.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/amp.iml" afterPath="$PROJECT_DIR$/.idea/amp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/amp/settings.py" afterPath="$PROJECT_DIR$/amp/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/forms.py" afterPath="$PROJECT_DIR$/login/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/views.py" afterPath="$PROJECT_DIR$/login/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login/login.html" afterPath="$PROJECT_DIR$/templates/login/login.html" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -545,7 +529,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481455439106</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加自定义组件">
+      <created>1481524928889</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1481524928889</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -642,7 +633,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="form教研问题" />
     <MESSAGE value="表单验证，登出" />
-    <option name="LAST_COMMIT_MESSAGE" value="表单验证，登出" />
+    <MESSAGE value="添加自定义组件" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加自定义组件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
