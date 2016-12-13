@@ -1,5 +1,5 @@
 import salt.client
-client = salt.client.LocalClient()
 
-def listSaltKeysJob():
-    print(1)
+local = salt.client.LocalClient()
+result = local.cmd('*', 'cmd.run', ['uptime'])
+print result
