@@ -10,5 +10,5 @@ class loginForm(forms.Form):
         }),
         label='')
     password = forms.CharField(widget=widgets.HpInputWidget(
-        attrs={'placeholder': '密码'}),
+        attrs={'placeholder': '密码', 'type': 'password'}),
         label='')

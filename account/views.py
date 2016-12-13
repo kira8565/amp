@@ -8,7 +8,7 @@ from django.template import RequestContext
 from django.views.decorators.csrf import csrf_protect
 
 # 登录页面
-from login.forms import loginForm
+from account.forms import loginForm
 
 
 def login(request):

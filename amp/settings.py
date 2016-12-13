@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_crontab',
-    'login',
+    'account',
     'mainform',
     'hpwidget',
     'saltmanager',
