@@ -19,7 +19,7 @@ from django.contrib import admin
 from amp import settings
 
 urlpatterns = [
-    url(r'^login/', include('login.urls')),
+    url(r'^accounts/', include('login.urls')),
     url(r'^mainform/', include('mainform.urls')),
     url(r'^admin/', admin.site.urls),
 ]

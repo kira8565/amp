@@ -31,7 +31,7 @@
         </div>
         <h3>欢迎使用 H+</h3>
 
-        <form method="post" class="m-t" role="form" action="checkLogin">
+        <form method="post" class="m-t" role="form" action="/accounts/checkLogin">
             {% csrf_token %}
 
             {% if msg %}
